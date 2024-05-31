@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Animated Continuous Sections with GSAP Observer changed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <!--
+This demo (https://codepen.io/lifescrewdesign/pen/VwOpvyZ).
+GSAP Observer demo modified to ScrollTrigger.
+.l-main, .section-wrap and footer are added.
+
+This is the original demo.
+https://codepen.io/lifescrewdesign/pen/VwOpvyZ
+-->
+
+  <main class="l-main">
+    <div class="section-wrap1">
+      <section class="first">
+        <div class="outer">
+          <div class="inner">
+            <div class="bg one">
+              <h2 class="section-heading">1-1</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="second">
+        <div class="outer">
+          <div class="inner">
+            <div class="bg">
+              <h2 class="section-heading">1-2</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="third">
+        <div class="outer">
+          <div class="inner">
+            <div class="bg">
+              <h2 class="section-heading">1-3</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /.section-wrap -->
+
+    <div class="section-wrap2">
+      <section class="fourth">
+        <div class="outer">
+          <div class="inner">
+            <div class="bg one">
+              <h2 class="section-heading">2-1</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fifth">
+        <div class="outer">
+          <div class="inner">
+            <div class="bg">
+              <h2 class="section-heading">2-2</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /.section-wrap -->
+  </main>
+  <footer class="footer"></footer>
+  <!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js'></script>
+  <script type="module" src="./script1.js"></script>
+  <script type="module" src="./script2.js"></script>
+
+</body>
+
+</html>
