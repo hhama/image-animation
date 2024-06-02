@@ -41,6 +41,15 @@ function gotoSection(index, direction) {
     0
   ).fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0);
 
+  console.log({ index });
+  console.log({ currentIndex });
+
+  if (index === 1 && currentIndex === 0 && direction === -1) {
+    window.scrollBy({
+      top: -window.innerHeight,
+      behavior: "smooth",
+    });
+  }
   currentIndex = index;
 }
 

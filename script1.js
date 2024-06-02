@@ -21,6 +21,7 @@ function gotoSection(index, direction) {
       defaults: { duration: 1.25, ease: "power1.inOut" },
       onComplete: () => (animating = false),
     });
+
   if (currentIndex >= 0) {
     // The first time this function runs, current is -1
     gsap.set(sections[currentIndex], { zIndex: 0 });
@@ -40,6 +41,13 @@ function gotoSection(index, direction) {
     },
     0
   ).fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0);
+
+  if (index === 0 && currentIndex === 2 && direction === 1) {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  }
 
   currentIndex = index;
 }
